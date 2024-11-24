@@ -22,4 +22,15 @@ p{
     font-family: "Poppins", serif;
     font-weight: 300;
     color:blue;
+    line-height: 2.6;
+}
+/* Letter spacing */
+h3{
+    letter-spacing: 3cm;
+    font-size: 20px;
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    color:rgb(15, 137, 141);
+    line-height: 2.6;
+    padding: 150px;
 }
