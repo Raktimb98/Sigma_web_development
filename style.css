@@ -17,7 +17,7 @@ background-color: brown;
 color: white;
 margin: 10px;
 }
-p{
+.fonts{
     font-size: 20px;
     font-family: "Poppins", serif;
     font-weight: 300;
@@ -33,4 +33,28 @@ h3{
     color:rgb(15, 137, 141);
     line-height: 2.6;
     padding: 150px;
+}
+.text-decoration{
+    text-decoration-line:underline;
+    text-decoration-style: wavy;
+    text-decoration-color:black ;
+    /* text-align: center; */
+    font-family: poppins;
+    text-transform:uppercase;
+    text-indent: 450px;
+    font-size: 20px;
+}
+.lorem{
+    font-size: 15px;
+    font-family: poppins;
+    font-weight: 400;
+    color: black;
+    line-height: 2.6;
+    text-align: justify;
+    word-wrap: break-word;
+    font-style: italic;
+    text-overflow: ellipsis;
+    overflow:scroll;
+    /* word-break: break-all; */
+    border: 2px solid black;
 }
