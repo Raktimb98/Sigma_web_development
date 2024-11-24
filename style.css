@@ -58,3 +58,12 @@ h3{
     /* word-break: break-all; */
     border: 2px solid black;
 }
+/* Excercise 2 */
+div > p:first-child{
+    background-color: yellow;
+    color: red;
+}
+div > p{
+    background-color: blue;
+    color: white;
+}
