@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadows and outline</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border: 2px solid black;
+            padding: 35px;
+            margin: 2vh;
+            box-shadow: 5px 6px 2px 0px gray;
+        }
+        .outline{
+            border:2px solid black;
+            padding: 35px;
+            margin: 2vh;
+            outline: 2px solid blue;
+            outline-offset: 32px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        hello i am a little box
+    </div>
+    <div class="outline">
+        hello i am a outline box
+    </div>
+</body>
+</html>
