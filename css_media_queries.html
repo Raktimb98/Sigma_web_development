@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css media queries</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: aquamarine;
+        }
+
+        .content {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            transition: background-color 0.3s ease;
+        }
+
+        @media screen and (max-width: 445px) {
+            .content {
+                color: tomato;
+            }
+            .boxes{
+                flex-direction: column;
+            }
+        }
+
+        @media screen and (orientation: landscape) {
+            .content {
+                background-color: blueviolet;
+            }
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            margin: 2px;
+            padding: 2px;
+            background-color: white;
+            border: 1px solid black;
+        }
+        .boxes{
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia labore commodi tenetur dicta eaque ullam
+            adipisci dignissimos, ipsa a totam modi nulla impedit explicabo amet similique itaque corporis vero eius
+            quos! Alias ab optio excepturi minus, voluptate voluptates sequi temporibus quas quod error quisquam
+            facilis.
+        </p>
+    </div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
