@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Selectors</title>
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+        }
+        .box:first-child{
+            background-color: red;
+        }
+        .box::first-line{
+            color:cadetblue;
+        } */
+        .boxes * {
+            background-color: brown;
+            border: 1px solid green;
+        }
+
+        /* [data-color="yellow"]{
+            background-color: yellow;
+        } */
+
+        /* Selectors grouping 
+        a,p, .box[data-color="yellow"]{
+            background-color: yellow;
+        } */
+
+        .box:nth-child(even) {
+            background-color: lightblue;
+        }
+        .boxes::before{
+            content: "Hello everyone!";
+        }
+        
+        ::selection{
+            color:aquamarine;
+        }
+        input::placeholder{
+            color: darkmagenta;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia enim ducimus consequuntur vitae accusantium quibusdam sunt nam, dolor doloribus magnam fugit repudiandae, harum molestiae voluptates? Earum voluptatibus rem, aut molestias, temporibus id cupiditate mollitia optio facilis iure recusandae natus totam, odit saepe? Possimus, animi adipisci.
+        </div>
+        <div data-color="yellow" class="box">box2</div>
+        <div class="box">box3</div>
+    </div>
+    <input type="text" placeholder="Enter your age">
+</body>
+
+</html>
