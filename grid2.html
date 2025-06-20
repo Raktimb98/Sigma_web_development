@@ -10,7 +10,7 @@
             border: 2px solid black;
             display: grid;
             grid-template-columns: 100px 100px;
-            grid-template-areas: "nav nav nav" "side article article""footer footer footer";
+            grid-template-areas: "nav nav nav" "side article article" "footer footer footer";
         }
 
         .item {
@@ -19,27 +19,32 @@
             /* width: 45px; */
         }
 
-        
+
         .item-1 {
             grid-area: nav;
             background-color: aqua;
         }
+
         .item-2 {
             grid-area: side;
             background-color: blueviolet;
         }
+
         .item-3 {
             grid-area: article;
             background-color: aquamarine;
         }
+
         .item-4 {
             grid-area: footer;
             background-color: gold;
         }
+
         .item-5 {
             /* background-color: silver; */
             grid-area: nav;
         }
+
         /* A game changing property=== "place-content:center" it allows us to use""justify-content: center" & "align-items:center" " together.*/
     </style>
 </head>
