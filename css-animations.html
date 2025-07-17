@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color:turquoise;
+            height: 80vh;
+            width: 30vw;
+        }
+        .box{
+            /* background-color: coral; */
+            width: 34px;
+            height: 45px;
+            animation: identifier 2s infinite alternate;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode */
+        }
+        @keyframes identifier{
+            from{
+                background-color: coral;
+                transform: translateX(10px);
+            }
+            to{
+                background-color: lightblue;
+                transform: translateX(1000px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+</html>
