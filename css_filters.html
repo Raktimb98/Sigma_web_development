@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Filters</title>
+    <style>
+        .img1, .img2, .img3 {
+            object-fit: cover;
+            height: 50vh;
+            width: 30vw;
+            margin-left: 10px;
+            grid-column: auto;
+        }
+        .img1{
+            /* object-fit: cover;
+            height: 50vh;
+            width: 30vw;
+            margin-left: 10px;
+            grid-column: auto; */
+            filter: grayscale(100%);
+        }
+        .img2{
+            /* object-fit: cover;
+            height: 50vh;
+            width: 30vw;
+            margin-left: 10px;
+            grid-column: auto; */
+            filter: brightness(50%);
+        }
+        .img3{
+            /* object-fit: cover;
+            height: 50vh;
+            width: 30vw;
+            margin-left: 10px;
+            grid-column: auto; */
+            filter:saturate(70%)
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="img1" src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2025/04/bryce-dallas-howard-gwen-stacy-spider-man.jpg" alt="Bryce Dallas Howard" title="Bryce Dallas Howard">
+        <img class="img2" src="https://www.reuters.com/resizer/v2/https%3A%2F%2Farchive-images.prod.global.a201836.reutersmedia.net%2F2010%2F05%2F20%2F2010-05-20T134535Z_01_GM1E4620VKE01_RTRRPP_0_FILM-MTV.JPG?auth=59c913922ab8df931825062cf61dc8fb3c2dcf1b238c1a7e4bbd807b5d459eaf&width=1080&quality=80" alt="Megan Fox" title="Megan Fox">
+        <img class="img3" src="https://www.giantfreakinrobot.com/wp-content/uploads/2022/03/alexandra-daddario-san-andreas-e1648495356421.jpeg" alt="alexandra daddario" title="alexandra daddario">
+    </div>
+</body>
+</html>
