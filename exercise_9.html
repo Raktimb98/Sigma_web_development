@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 9</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- It's a faulty calculator -->
+    <h1>Faulty Calculator</h1>
+    <p>This calculator is supposed to add two numbers, but it has a bug that causes it to subtract them instead.</p>
+    <p>Check the console for the result of the faulty calculation.</p>
+
+    <script>
+        function faultyCalculator(a, b) {
+            // This function is intentionally faulty
+            // It should return the sum of a and b, but it returns a - b instead
+            return a - b;
+        }
+
+        const num1 = 10;
+        const num2 = 5;
+        const result = faultyCalculator(num1, num2);
+        
+        console.log(`The result of adding ${num1} and ${num2} is: ${result}`);
+    </script>
+</body>
+</html>
