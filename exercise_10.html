@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 10</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Business name Generator -->
+    <h1>Business Name Generator</h1>
+    <p>Enter a keyword to generate a unique business name.</p>
+    <input type="text" id="keyword" placeholder="Enter keyword">
+    <button id="generate">Generate Name</button>
+    <p id="result"></p>
+
+    <script>
+        function generateBusinessName(keyword) {
+            const suffixes = ['Solutions', 'Innovations', 'Systems', 'Concepts', 'Designs', 'Technologies', 'Enterprises', 'Studios', 'Works', 'Creations', 'Group', 'Partners', 'Associates', 'Global', 'Network', 'Hub', 'Collective', 'Agency', 'Consulting', 'Services', 'Ventures', 'Dynamics', 'Labs', 'Media', 'Productions', 'Development', 'Strategies', 'Resources', 'Experts', 'Insights', 'Connections', 'Alliance', 'Edge', 'Vision', 'Pathways', 'Sphere', 'Solutions Group', 'Transportation'];
+            const randomSuffix = suffixes[Math.floor(Math.random() * suffixes.length)];
+            return `${keyword} ${randomSuffix}`;
+        }
+
+        document.getElementById('generate').addEventListener('click', () => {
+            const keyword = document.getElementById('keyword').value.trim();
+            if (keyword) {
+                const businessName = generateBusinessName(keyword);
+                document.getElementById('result').textContent = `Generated Business Name: ${businessName}`;
+            } else {
+                document.getElementById('result').textContent = 'Please enter a keyword.';
+            }
+        });
+        </script>
+    <p>Check the console for any errors or additional information.</p>
+</body>
+</html>
