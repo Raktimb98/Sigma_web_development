@@ -1,0 +1,90 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserting and removing elements using DOM</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .example {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin-top: 10px;
+        }
+        .red{
+            color: red;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <!-- <h1>Inserting and Removing Elements using DOM</h1>
+            <p>The Document Object Model (DOM) allows you to manipulate HTML elements dynamically. You can insert new
+                elements, remove existing ones, and modify the structure of your web page.</p>
+
+            <div class="example">
+                <h2>Example: Inserting a New Element</h2>
+                <p>To insert a new element, you can use methods like <code>appendChild()</code> or
+                    <code>insertBefore()</code>.
+                </p>
+                <pre><code>const newElement = document.createElement('div'); -->
+        </div>
+        <div style="color: aqua;" class="hi" data-createdby="FrostFern" data-dumpby="Matrix"="">
+            hii
+        </div>
+        <div class="red">
+            i'm red
+        </div>
+    </div>
+    <script>
+        // console.log(document.querySelector(".container").innerHTML);
+        console.log(document.querySelector(".hi").innerHTML);
+        console.log(document.querySelector(".hi").innerText);
+        console.log(document.querySelector(".hi").outerHTML);
+        console.log(document.querySelector(".hi").nodeName);
+        console.log(document.querySelector(".hi").textContent);
+        // console.log(document.querySelector(".hi").hidden=true);
+        console.log(document.querySelector(".hi").hasAttribute("style"));
+        console.log(document.querySelector(".hi").getAttribute("class"));
+        console.log(document.querySelector(".hi").setAttribute("style", "color: red;"));
+        console.log(document.querySelector(".hi").attributes);
+        console.log(document.querySelector(".hi").removeAttribute("style"));
+        // console.log(document.designMode = "on");
+        console.log(document.querySelector(".hi").dataset);
+
+        /* let div = document.createElement("div");
+        div.innerHTML = "This is a new div element.";
+        div.setAttribute("class", "newDiv");
+        document.querySelector(".container").append(div);
+        */
+
+        let cont = document.querySelector(".container");
+        // cont.insertAdjacentHTML("afterbegin", "<div class='newDiv'>This is a new div element.</div>");
+        // cont.insertAdjacentHTML("beforeend", "<div class='newDiv'>This is a new div element.</div>");
+        // cont.insertAdjacentHTML("afterend", "<div class='newDiv'>This is a new div element.</div>");
+        // cont.insertAdjacentHTML("beforebegin", "<div class='newDiv'>This is a new div element.</div>");
+
+        // console.log(document.querySelector(".container").classList);
+        console.log(document.querySelector(".container").className);
+        // console.log(document.querySelector(".red").classList.toggle("red"));
+    </script>
+</body>
+
+</html>
