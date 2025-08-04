@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events, Event Bubbling, setInterval & setTimeout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Events, Event Bubbling, setInterval & setTimeout</h1>
+    <p>In web development, events are actions that occur in the browser, such as clicks, key presses, or page loads. JavaScript allows you to respond to these events using event listeners.</p>
+    
+    <h2>Event Bubbling</h2>
+    <p>Event bubbling is a mechanism where an event starts from the target element and bubbles up to its parent elements. This allows for event delegation, where a single event listener can manage events for multiple child elements.</p>
+    
+    <h2>setInterval & setTimeout</h2>
+    <p><code>setInterval()</code> and <code>setTimeout()</code> are functions that allow you to execute code after a specified delay or repeatedly at specified intervals.</p>
+    
+    <p><code>setTimeout()</code> executes a function once after a delay:</p>
+    <pre><code>setTimeout(() => {
+        console.log('Executed after 2 seconds');
+    }, 2000);</code></pre>
+    
+    <p><code>setInterval()</code> executes a function repeatedly at specified intervals:</p>
+    <pre><code>setInterval(() => {
+        console.log('Executed every 3 seconds');
+    }, 3000);</code></pre>
+
+    <script>
+        // Example of event bubbling
+        document.addEventListener('click', function(event) {
+            console.log('Clicked on:', event.target.tagName);
+        });
+
+        // Example of setTimeout
+        setTimeout(() => {
+            console.log('Executed after 2 seconds');
+        }, 2000);
+
+        // Example of setInterval
+        setInterval(() => {
+            console.log('Executed every 3 seconds');
+        }, 3000);
+    </script>
+</body>
+</html>
