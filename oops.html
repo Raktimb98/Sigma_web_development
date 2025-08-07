@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oops</title>
+</head>
+<body>
+    
+    <script>
+        class animal{
+            constructor(name){
+                this.name = name;
+                console.log("This is a newly born animal");
+            }
+            eats(){
+                console.log("Ami akhon gilchi");
+            }
+            sleeps(){
+                console.log("Ami akhon keliye porchi");
+            }
+            plays(){
+                console.log("Ami akhon khelchi");
+            }
+        }
+
+        class monkey extends animal{
+            constructor(name){
+                super(name);
+                console.log("This is a newly born monkey");
+            }
+            
+        }
+
+        let human = new animal("Chomu");
+        console.log(human.name);
+        human.eats();
+        human.sleeps();
+        human.plays();
+        console.log("====================================");
+        let m = new monkey("Chimpu");
+        console.log(m.name);
+    </script>
+</body>
+</html>
