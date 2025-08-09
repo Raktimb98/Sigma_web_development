@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance JavaScript</title>
+    <style>
+        body {
+            background-color: #181818;
+            color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        async function sleep() {
+            return new Promise((resolve,reject)=>{
+                setTimeout(()=>{
+                    resolve("Slept for 2 seconds");
+                }, 2000);
+                })
+            }
+            // This is called iife (Immediately Invoked Function Expression)
+            // It is used to execute a function immediately after it is defined.
+
+            // (async function main(){
+            //     let a = await sleep();
+            //     console.log(a);
+            // })();
+
+            //Destructuring
+            // (async function main() {
+            //     let [a,b] = [1,2,3];    
+            //     console.log(a,b);
+            // })();
+
+            //Spread syntax
+            (async function main() {
+                let arr1 = [1,2,3];
+                let arr2 = [4,5,6];
+                let arr3 = [...arr1, ...arr2];
+                console.log(arr3);
+            })();
+    </script>
+</body>
+</html>
