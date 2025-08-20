@@ -1,0 +1,15 @@
+** A JavaScript based backend
+there will be...
+Data    File    Third Party(API)
+-> A Js runtime: (Nodejs/Bun/Deno)
+package.json    .env(readme,git,lint,prettier etc)
+-> src
+index(DB connects)      App(config,cookie etc)      constants(enums,DB-name)
+** These are directory
+->DB
+->Models
+->Controllers
+->Routes
+->Middle wares
+->Utils or utilities
+->More(Depends)
